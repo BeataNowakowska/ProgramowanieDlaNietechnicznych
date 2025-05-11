@@ -1,4 +1,4 @@
-entrypoint = "main"
+entrypoint = "kalkulatorpoltest"
 modules = ["python-3.11"]
 
 [nix]
@@ -11,5 +11,5 @@ language = "python3"
 requiredFiles = [".replit", "replit.nix"]
 
 [deployment]
-run = ["python3", "kolor.py"]
+run = ["python3", "kalkulatorpoltest.py"]
 deploymentTarget = "cloudrun"

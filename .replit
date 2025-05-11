@@ -13,3 +13,15 @@ requiredFiles = [".replit", "replit.nix"]
 [deployment]
 run = ["python3", "kalkulatorpoltest.py"]
 deploymentTarget = "cloudrun"
+
+[workflows]
+runButton = "test"
+
+[[workflows.workflow]]
+name = "test"
+mode = "sequential"
+author = 16609480
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python3 kalkulatorpoltest.py"

@@ -29,7 +29,9 @@ args = "python3 kalkulatorpoltest.py"
 [[workflows.workflow]]
 name = "wespolzespol"
 mode = "sequential"
+
 author = 42570524
+
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"

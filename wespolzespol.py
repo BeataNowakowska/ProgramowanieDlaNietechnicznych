@@ -2,7 +2,9 @@ import random
 import time
 from abc import ABC, abstractmethod
 
+
 class OsobaIT(ABC):
+
     def __init__(self, imie):
         self.imie = imie
         self.profesja = ""
@@ -11,48 +13,63 @@ class OsobaIT(ABC):
     def daj_glos(self):
         return f"{self.imie}, jak to {self.profesja}, mówi: {self.tekst}"
 
+
 class Programista(OsobaIT):
+
     def __init__(self, imie):
         super().__init__(imie)
         self.profesja = "programistka"
         self.tekst = "U mnie działa, pewnie masz coś źle ustawione."
 
+
 class Tester(OsobaIT):
+
     def __init__(self, imie):
         super().__init__(imie)
         self.profesja = "tester"
         self.tekst = "O, znowu coś zepsuliście."
 
+
 class ScrumMaster(OsobaIT):
+
     def __init__(self, imie):
         super().__init__(imie)
         self.profesja = "Scrum Masterka"
         self.tekst = "Czuję, że powinniśmy zrobić burzę mózgów."
 
+
 class DevOps(OsobaIT):
+
     def __init__(self, imie):
         super().__init__(imie)
         self.profesja = "DevOpsowiec"
         self.tekst = "W produkcji? To ciekawe..."
 
+
 class ProductOwner(OsobaIT):
+
     def __init__(self, imie):
         super().__init__(imie)
         self.profesja = "Product Ownerka"
         self.tekst = "Czy możemy to mieć na wczoraj?"
 
+
 class UXDesigner(OsobaIT):
+
     def __init__(self, imie):
         super().__init__(imie)
         self.profesja = "UX designer"
-        self.tekst = "To trzeba zrobić bardziej intuicyjnie."    
+        self.tekst = "To trzeba zrobić bardziej intuicyjnie."
+
 
 class TeamLeader(OsobaIT):
+
     def __init__(self, imie):
         super().__init__(imie)
         self.profesja = "Team Leader"
         self.tekst = "To i tak, i tak musi być zrobione!"
-    
+
+
 def stworz_osoby():
     osoby = [
         Programista("Ania"),
@@ -66,12 +83,14 @@ def stworz_osoby():
     random.shuffle(osoby)  # tasowanie ukryte tutaj
     return osoby
 
+
 def main():
     osoby = stworz_osoby()
 
     print("Codzienność w IT:")
     for osoba in osoby:
         print(osoba.daj_glos())
+
 
 if __name__ == "__main__":
     main()

@@ -61,12 +61,13 @@ class UXDesigner(OsobaIT):
         self.profesja = "UX designer"
         self.tekst = "To trzeba zrobić bardziej intuicyjnie."
 
+
 class TeamLeader(OsobaIT):
 
-def __init__(self, imie):
-    super().__init__(imie)
-    self.profesja = "Team Leader"
-    self.tekst = "Nie no tak to nie zadziało, zróbmy to po bożemu"
+    def __init__(self, imie):
+        super().__init__(imie)
+        self.profesja = "Team Leader"
+        self.tekst = "Nie no tak to nie zadziało, zróbmy to po bożemu"
 
 
 def stworz_osoby():

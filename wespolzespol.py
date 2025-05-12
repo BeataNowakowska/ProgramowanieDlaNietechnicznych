@@ -45,8 +45,14 @@ class UXDesigner(OsobaIT):
     def __init__(self, imie):
         super().__init__(imie)
         self.profesja = "UX designer"
-        self.tekst = "To trzeba zrobić bardziej intuicyjnie."
+        self.tekst = "To trzeba zrobić bardziej intuicyjnie."    
 
+class TeamLeader(OsobaIT):
+    def __init__(self, imie):
+        super().__init__(imie)
+        self.profesja = "Team Leader"
+        self.tekst = "To i tak, i tak musi być zrobione!"
+    
 def stworz_osoby():
     osoby = [
         Programista("Ania"),
@@ -54,7 +60,8 @@ def stworz_osoby():
         ScrumMaster("Celina"),
         DevOps("Darek"),
         ProductOwner("Ewa"),
-        UXDesigner("Filip")
+        UXDesigner("Filip"),
+        TeamLeader("Karol")
     ]
     random.shuffle(osoby)  # tasowanie ukryte tutaj
     return osoby
@@ -65,7 +72,6 @@ def main():
     print("Codzienność w IT:")
     for osoba in osoby:
         print(osoba.daj_glos())
-        time.sleep(10)
 
 if __name__ == "__main__":
     main()

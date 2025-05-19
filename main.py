@@ -4,13 +4,13 @@ imie = "Paweł"
 
 def moje_imie():
   print("Mam na imie", imie)
-  print("---------------------------")
+
 
 def twoje_imie():
   twoje_imie = input("Jak masz na imię? ")
   print("Cześć", twoje_imie)
 
-  moj
+  moje_imie()
 
   if twoje_imie == imie:
     print("Masz to samo imię co ja!")

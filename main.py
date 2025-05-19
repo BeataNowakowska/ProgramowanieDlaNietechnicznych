@@ -2,11 +2,13 @@ from datetime import date
 
 imie = "Paweł"
 
+
 def moje_imie():
   print("Mam na imie", imie)
 
 
 def twoje_imie():
+
   twoje_imie = input("Jak masz na imię? ")
   print("Cześć", twoje_imie)
 
@@ -18,5 +20,4 @@ def twoje_imie():
     print("Masz inne imię niż ja.")
 
 
-moje_imie()
 twoje_imie()

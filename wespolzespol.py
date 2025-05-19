@@ -70,18 +70,14 @@ def stworz_osoby():
         DevOps("Darek"),
         ProductOwner("Ewa"),
         UXDesigner("Filip"),
-        TeamLeader("Karol")
     ]
     random.shuffle(osoby)  # tasowanie ukryte tutaj
     return osoby
 
 
 def main():
-    osoby = stworz_osoby()
-
-    print("Codzienność w IT:")
-    for osoba in osoby:
-        print(osoba.daj_glos())
+    ania = Programista("Ania")
+    print(ania.daj_glos())
 
 
 if __name__ == "__main__":

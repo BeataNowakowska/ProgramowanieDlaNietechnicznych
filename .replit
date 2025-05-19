@@ -15,6 +15,7 @@ run = ["sh", "-c", "python3 main.py"]
 deploymentTarget = "cloudrun"
 
 [workflows]
+runButton = "wespolzespol"
 
 [[workflows.workflow]]
 name = "test"
@@ -23,7 +24,11 @@ author = 16609480
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "python3 kalkulatorpoltest.py"
+args = "python3 main.py"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python3 main.py"
 
 [[workflows.workflow]]
 name = "wespolzespol"

@@ -1,7 +1,22 @@
 from datetime import date
 
+imie = "Paweł"
 
 def moje_imie():
-  imie = "Paweł"
   print("Mam na imie", imie)
   print("---------------------------")
+
+def twoje_imie():
+  twoje_imie = input("Jak masz na imię? ")
+  print("Cześć", twoje_imie)
+
+  moj
+
+  if twoje_imie == imie:
+    print("Masz to samo imię co ja!")
+  else:
+    print("Masz inne imię niż ja.")
+
+
+moje_imie()
+twoje_imie()

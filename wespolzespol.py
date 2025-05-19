@@ -69,7 +69,8 @@ def stworz_osoby():
         ScrumMaster("Celina"),
         DevOps("Darek"),
         ProductOwner("Ewa"),
-        UXDesigner("Filip")
+        UXDesigner("Filip"),
+        TeamLeader("Karol")
     ]
     random.shuffle(osoby)  # tasowanie ukryte tutaj
     return osoby

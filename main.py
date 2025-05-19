@@ -9,16 +9,14 @@ def moje_imie():
 
 
 def twoje_imie():
-  twoje_imie = input("Jak masz na imie? ")
-  print("Masz na imie", twoje_imie)
-
-  if twoje_imie == imie:
-    print("O masz na imie tak jak ja", imie)
-  else:
-    print("Twoje imie jest różne niż moje", imie)
+  twoje_imie = input("Jak masz na imię?")
+  print("Cześć", twoje_imie)
 
 
-print("Bla bla bla")
+if twoje_imie == moje_imie:
+  print("Mamy takie same imiona")
+else:
+  print("cześć", twoje_imie)
 
 moje_imie()
 twoje_imie()

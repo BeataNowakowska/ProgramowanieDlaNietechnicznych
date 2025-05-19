@@ -1,6 +1,4 @@
 import unittest
-
-print("Hello, test!")
 from kalkulatorpol import KalkulatorPol
 
 
